@@ -1,0 +1,218 @@
+/* цвет актива #2196F3
+ */
+/* цвет текста #212121
+ */
+/* вторичный цвет текста #757575
+ */
+/* белый цвет #FFFFFF
+ */
+/* белый вторичный rgba(255, 255, 255, 0,6)
+ */
+/* цвет фона основной #FFFFFF */
+/* цвет фона 1 #2F303A */
+/* цвет фона 2 #E5E5E5 */
+/*цвет фона 3 #F5F4FA */
+
+/* 1) Разметка index.html и root */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --button-bg-color: #f5f4fa;
+  --bg-one: #2f303a;
+  --bg-two: #e5e5e5;
+  --bg-three: #f5f4fa;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+  font-family: Roboto, sans-serif, Raleway, sans-serif;
+  letter-spacing: 0.02em;
+}
+.list {
+  list-style: none;
+}
+
+/* разметка логотипа */
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+/* Меняю цвет логотипа , теперь studio будет черным в шапке и белым в футере*/
+.accent {
+  color: var(--title-text-color);
+}
+.accent-footer {
+  color: var(--primary-white-color);
+}
+
+/* Стилизация навигации */
+.site-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+/* Стилизация контактов */
+.contacts .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+}
+.contacts .link:focus,
+.contacts .link:hover {
+  color: var(--accent-color);
+}
+
+/* разметка героя */
+.hero-title {
+  color: var(--primary-white-color);
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+/* разметка кнопки hero */
+.button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+/* разметка секций */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.section,
+.section-title {
+  color: var(--title-text-color);
+}
+/* смена фона секции Hero и Футера */
+.hero,
+.footer {
+  background-color: var(--bg-one);
+}
+
+/* Смена фона секции Наша команда */
+.members {
+  background-color: var(--bg-three);
+}
+
+/* разметка преимуществ */
+
+.features .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.features .text {
+  color: var(--primary-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Разметка членов команды */
+.crew .title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.crew .text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+/* Стилизация адреса */
+.address .link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  text-decoration: none;
+}
+.address .link:hover,
+.address .link:focus {
+  color: var(--accent-color);
+}
+.address .geo {
+  color: var(--primary-white-color);
+}
+
+/* 2)  разметка portfolio.html */
+/* цвет неактивной кнопки #F5F4FA */
+/*цвет фона #E5E5E5  */
+
+.nodecoration {
+  text-decoration: none;
+}
+
+/* разметка кнопок фильтра портфолио */
+.btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  background-color: var(--button-bg-color);
+  cursor: pointer;
+}
+.btn:hover,
+.btn:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+/* Works */
+
+.works .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.works .text {
+  color: #757575;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
