@@ -30,8 +30,11 @@ body {
   background-color: var(--primary-white-color);
   font-family: Roboto, sans-serif, Raleway, sans-serif;
   letter-spacing: 0.02em;
+  margin: 0;
 }
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -50,6 +53,16 @@ body {
 }
 .accent-footer {
   color: var(--primary-white-color);
+}
+
+/* Геометрия */
+
+.container {
+  width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 /* Стилизация навигации */
@@ -80,8 +93,23 @@ body {
   color: var(--accent-color);
 }
 
-/* разметка героя */
+/* разметка Hero */
+/* смена фона секции Hero и Футера */
+.hero,
+.footer {
+  background-color: var(--bg-one);
+}
+.hero {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 452px;
+  padding-right: 452px;
+}
+
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--primary-white-color);
   font-family: Roboto;
   font-weight: 900;
@@ -92,6 +120,11 @@ body {
 }
 /* разметка кнопки hero */
 .button {
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 200px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-family: inherit;
@@ -99,34 +132,27 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  text-align: center;
   cursor: pointer;
 }
-/* разметка секций */
-.section-title {
+/* разметка преимуществ */
+
+.features-title,
+.job-title,
+.crew-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-}
-.section,
-.section-title {
   color: var(--title-text-color);
 }
-/* смена фона секции Hero и Футера */
-.hero,
-.footer {
-  background-color: var(--bg-one);
-}
-
-/* Смена фона секции Наша команда */
-.members {
-  background-color: var(--bg-three);
-}
-
-/* разметка преимуществ */
 
 .features .title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -135,14 +161,29 @@ body {
   color: var(--title-text-color);
 }
 .features .text {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
+/* Разметка чем мы занимаемя */
+.job {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* Разметка членов команды */
+.crew-members {
+  padding-top: 186px;
+  padding-bottom: 94px;
+  background-color: var(--bg-three);
+}
+
 .crew .title {
+  margin-top: 0;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -151,6 +192,8 @@ body {
 }
 
 .crew .text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -186,6 +229,10 @@ body {
 
 /* разметка кнопок фильтра портфолио */
 .btn {
+  padding: 6px 22px;
+  min-width: 73px;
+  border-radius: 4px;
+  border-color: transparent;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -203,6 +250,8 @@ body {
 /* Works */
 
 .works .title {
+  margin-top: 0;
+  margin-bottom: 4px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -211,8 +260,14 @@ body {
 }
 
 .works .text {
+  margin-top: 0;
+  margin-bottom: 0;
   color: #757575;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+.hero-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
