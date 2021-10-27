@@ -52,6 +52,7 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
+
 /* Меняю цвет логотипа , теперь studio будет черным в шапке и белым в футере*/
 .accent {
   color: var(--title-text-color);
@@ -72,9 +73,13 @@ body {
 
 /* ===============Стилизация списка nav (навигация страницы) ===============*/
 
+.header-container {
+  display: flex;
+}
 .main-nav {
   display: flex;
 }
+
 .site-nav {
   display: flex;
 }
