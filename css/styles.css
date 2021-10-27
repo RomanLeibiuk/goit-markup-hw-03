@@ -1,19 +1,17 @@
-/* цвет актива #2196F3
- */
-/* цвет текста #212121
- */
-/* вторичный цвет текста #757575
- */
-/* белый цвет #FFFFFF
- */
-/* белый вторичный rgba(255, 255, 255, 0,6)
- */
-/* цвет фона основной #FFFFFF */
-/* цвет фона 1 #2F303A */
-/* цвет фона 2 #E5E5E5 */
-/*цвет фона 3 #F5F4FA */
+/*====Палитра цветов=====  */
+/* цвет актива #2196F3 
+цвет текста #212121
+вторичный цвет текста #757575
+белый цвет #FFFFFF
+белый вторичный rgba(255, 255, 255, 0,6)
+цвет фона основной #FFFFFF 
+цвет фона 1 #2F303A 
+цвет фона 2 #E5E5E5 
+цвет фона 3 #F5F4FA  
+цвет неактивной кнопки #F5F4FA 
 
-/* 1) Разметка index.html и root */
+
+/* I.=============== Разметка index.html и root ===============*/
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -37,8 +35,15 @@ body {
   margin: 0;
   list-style: none;
 }
+.nodecoration {
+  text-decoration: none;
+}
+/* ==================Стилизация Шапки header ===============*/
+.header {
+  border-bottom: 1px transparent;
+}
 
-/* разметка логотипа */
+/* ==================Стилизация Логотипа  logo ===============*/
 .logo {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
@@ -55,18 +60,33 @@ body {
   color: var(--primary-white-color);
 }
 
-/* Геометрия */
+/* ===============Стилизация container =============== */
 
 .container {
-  width: 1170px;
+  width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
 }
 
-/* Стилизация навигации */
+/* ===============Стилизация списка nav (навигация страницы) ===============*/
+
+.main-nav {
+  display: flex;
+}
+.site-nav {
+  display: flex;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav .link {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -80,8 +100,18 @@ body {
 .site-nav .link.current {
   color: var(--accent-color);
 }
-/* Стилизация контактов */
+/* ==================Стилизация списка contacts ===============*/
+.contacts {
+  display: flex;
+}
+.contacts .item + .item {
+  margin-left: 50px;
+}
 .contacts .link {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -93,7 +123,7 @@ body {
   color: var(--accent-color);
 }
 
-/* разметка Hero */
+/* ==================Стилизация секции hero===============*/
 /* смена фона секции Hero и Футера */
 .hero,
 .footer {
@@ -118,7 +148,7 @@ body {
   letter-spacing: 0.06em;
   text-align: center;
 }
-/* разметка кнопки hero */
+/* ==================Стилизация кнопки в секции hero ===============*/
 .button {
   display: inline-block;
   padding: 10px 32px;
@@ -135,7 +165,7 @@ body {
   text-align: center;
   cursor: pointer;
 }
-/* разметка преимуществ */
+/* ==================Стилизация features ===============*/
 
 .features-title,
 .job-title,
@@ -169,14 +199,14 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* Разметка чем мы занимаемя */
+/* ==================Стилизация  секции Чем мы занимаемся ===============*/
 .job {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-/* Разметка членов команды */
+/* ==================Стилизация секции Наша команда ===============*/
 .crew-members {
-  padding-top: 186px;
+  padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--bg-three);
 }
@@ -201,7 +231,7 @@ body {
   color: var(--primary-text-color);
 }
 
-/* Стилизация адреса */
+/* ==================Стилизация Чем мы занимаемся  ===============*/
 .address .link {
   font-weight: 400;
   font-size: 14px;
@@ -219,15 +249,9 @@ body {
   color: var(--primary-white-color);
 }
 
-/* 2)  разметка portfolio.html */
-/* цвет неактивной кнопки #F5F4FA */
-/*цвет фона #E5E5E5  */
+/* II. ==================Стилизация страницы portfolio.html ===============*/
 
-.nodecoration {
-  text-decoration: none;
-}
-
-/* разметка кнопок фильтра портфолио */
+/* ==================Стилизация кнопок секции hero-portfolio  ===============*/
 .btn {
   padding: 6px 22px;
   min-width: 73px;
@@ -247,7 +271,7 @@ body {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
-/* Works */
+/* ==================Стилизация Примеров наших работ  ===============*/
 
 .works .title {
   margin-top: 0;
