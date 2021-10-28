@@ -17,38 +17,39 @@
 <body>
     <!--======================== Разметка Шапки страницы================================================-->
     <header class="header">
-        <div class="container">
-            <nav>
+        <div class="header-container container">
+            <nav class="main-nav">
                 <a href="./index.html" class="logo">Web<span class="accent">Studio</span>
                 </a>
                 <!--======================== Разметка навигации================================================-->
                 <ul class="site-nav list">
-                    <li> <a href="./index.html" class="link">Студия</a></li>
-                    <li> <a href="./portfolio.html" class="link current">Портфолио</a></li>
-                    <li> <a href="" class="link">Контакты</a></li>
+                    <li class="item"> <a href="./index.html" class="link">Студия</a></li>
+                    <li  class="item"> <a href="./portfolio.html" class="link current">Портфолио</a></li>
+                    <li  class="item"> <a href="" class="link">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="contacts list">
-                <li> <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                <li> <a href="tel:+380404040032" class="link">+380404040032</a></li>
+                <li  class="item"> <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                <li  class="item"> <a href="tel:+380404040032" class="link">+380404040032</a></li>
             </ul>
         </div>
     </header>   
     <!--======================== Основной контент страницы================================================-->
     <main>
-        <section class="hero-portfolio">
+        <section class="section hero-portfolio">
             <div class="container">
                 <h1 class="hero-title">Примеры наших работ</h1>
                 
-                <ul class="list">
-                    <li> <button type="button" class="btn">Все</button></li>
-                    <li> <button type="button" class="btn">Веб-сайты</button> </li>
-                    <li> <button type="button" class="btn">Приложения</button> </li>
-                    <li> <button type="button" class="btn">Маркетинг</button> </li>
+                <ul class="btn-list list">
+                    <li class="item"> <button type="button" class="btn">Все</button></li>
+                    <li class="item"> <button type="button" class="btn">Веб-сайты</button> </li>
+                    <li class="item"> <button type="button" class="btn">Приложения</button> </li>
+                    <li class="item"> <button type="button" class="btn">Маркетинг</button> </li>
+                    <li class="item"> <button type="button" class="btn">Маркетинг</button> </li>
                 </ul>
-                <div  class="hp-container >
+                <div  class="hp-container">
                 <ul class="works list">
-                    <li>
+                    <li class="item">
                         <a href="" class="nodecoration">
                             <img src="./images/portfolio-images/members.jpg" width="370" height="294" alt="crew members">
                             <h2 class="title">Технокряк</h2>
@@ -56,7 +57,7 @@
                         </a>
                     </li>
                 
-                    <li>
+                    <li class="item">
                         <a href="" class="nodecoration">
                             <img src="./images/portfolio-images/poster.jpg" width="370" height="294" alt="basketball poster">
                             <h2 class="title">Постер New Orlean vs Golden Star</h2>
@@ -66,7 +67,7 @@
                 
                 
                 
-                    <li>
+                    <li class="item">
                         <a href="" class="nodecoration">
                             <img src="./images/portfolio-images/seafood.jpg" width="370" height="294" alt="seafood restaurant">
                             <h2 class="title">Ресторан Seafood</h2>
@@ -74,7 +75,7 @@
                         </a>
                     </li>
                 
-                    <li>
+                    <li class="item">
                         <a href="" class="nodecoration">
                             <img src="./images/portfolio-images/earbuds.jpg" width="370" height="294" alt="project prime">
                             <h2 class="title">Проект Prime</h2>
@@ -82,7 +83,7 @@
                         </a>
                     </li>
                 
-                    <li>
+                    <li class="item">
                         <a href="" class="nodecoration">
                             <img src="./images/portfolio-images/boxes.jpg" width="370" height="294" alt="project boxes">
                             <h2 class="title">Проект Boxes</h2>
@@ -90,7 +91,7 @@
                         </a>
                     </li>
                 
-                    <li>
+                    <li class="item">
                         <a href="" class="nodecoration">
                             <img src="./images/portfolio-images/screen.jpg" width="370" height="294" alt="Inspiration has no Borders">
                             <h2 class="title">Inspiration has no Borders</h2>
@@ -99,7 +100,7 @@
                     </li>
                 
                 
-                    <li>
+                    <li class="item">
                         <a href="" class="nodecoration">
                             <img src="./images/portfolio-images/book.jpg" width="370" height="294" alt="Limited edition">
                             <h2 class="title">Издание Limited Edition</h2>
@@ -107,7 +108,7 @@
                         </a>
                     </li>
                 
-                    <li>
+                    <li class="item">
                         <a href="" class="nodecoration">
                             <img src="./images/portfolio-images/label.jpg" width="370" height="294" alt="project LAB">
                             <h2 class="title">Проект LAB</h2>
@@ -115,7 +116,7 @@
                         </a>
                     </li>
                 
-                    <li>
+                    <li class="item">
                         <a href="" class="nodecoration">
                             <img src="./images/portfolio-images/engineering.jpg" width="370" height="294" alt="Growing Business">
                             <h2 class="title">Growing Business</h2>
@@ -131,16 +132,16 @@
     <!--======================== Разметка Футера================================================-->
     <footer class="footer">
     
-        <div class="container">
-            <a href="./index.html" class="logo">Web<span class="accent-footer">Studio</span>
+        <div class="footer-container container">
+            <a href="./index.html" class="footer-logo logo">Web<span class="accent-footer">Studio</span>
             </a>
             
             <address class="address">
-                <ul class="list">
-                    <li><a href="https://www.google.com/maps" target="_blank" rel="noopener" class="geo link">г. Киев, пр-т Леси
+                <ul class="ad-list list">
+                    <li class="item"><a href="https://www.google.com/maps" target="_blank" rel="noopener" class="geo link">г. Киев, пр-т Леси
                             Украинки, 26 </a></li>
-                    <li> <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                    <li> <a href="tel:+380404040032" class="link">+380404040032</a></li>
+                    <li class="item"> <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                    <li class="item"> <a href="tel:+380404040032" class="link">+380404040032</a></li>
                 </ul>
             </address>
         </div>
