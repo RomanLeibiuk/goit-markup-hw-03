@@ -75,13 +75,16 @@ body {
 
 .header-container {
   display: flex;
+  align-items: center;
 }
 .main-nav {
   display: flex;
+  align-items: center;
 }
 
 .site-nav {
   display: flex;
+  margin-left: 93px;
 }
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
@@ -89,8 +92,8 @@ body {
 
 .site-nav .link {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   color: var(--title-text-color);
   font-weight: 500;
@@ -108,14 +111,15 @@ body {
 /* ==================Стилизация списка contacts ===============*/
 .contacts {
   display: flex;
+  margin-left: auto;
 }
 .contacts .item + .item {
   margin-left: 50px;
 }
 .contacts .link {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   color: var(--primary-text-color);
   font-weight: 500;
@@ -295,6 +299,10 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+
+.hp-container {
+  display: flex;
 }
 .hero-portfolio {
   padding-top: 94px;
