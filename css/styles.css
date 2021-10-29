@@ -144,11 +144,12 @@ body {
 }
 .hero {
   text-align: center;
-  padding: 200px 452px 200px 452px;
+  padding: 200px 0;
 }
 
 .hero-title {
-  margin: 0;
+  width: 696px;
+  margin: 0 auto;
   margin-bottom: 30px;
 
   color: var(--primary-white-color);
@@ -178,7 +179,6 @@ body {
   cursor: pointer;
 }
 /* ==================Стилизация features ===============*/
-.features-title,
 .job-title,
 .crew-title {
   margin: 0;
@@ -258,10 +258,13 @@ body {
   background-color: var(--bg-three);
 }
 
-.crew-list .title {
+.member-name {
   padding-top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
+}
+.crew-list .title {
   margin: 0;
+  margin-bottom: 10px;
 
   color: var(--title-text-color);
   font-weight: 500;
@@ -273,7 +276,6 @@ body {
 
 .crew-list .text {
   margin: 0;
-  padding-bottom: 30px;
 
   font-weight: 400;
   font-size: 16px;
@@ -284,9 +286,7 @@ body {
 }
 
 /* ==================Стилизация адреса  ===============*/
-.footer-container {
-  display: flex;
-  flex-direction: column;
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -308,12 +308,10 @@ body {
   color: var(--primary-white-color);
 }
 .footer-logo {
+  display: block;
   margin-bottom: 20px;
-  width: 145px;
 }
-.ad-list {
-  width: 231px;
-}
+
 .ad-list .item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -356,11 +354,15 @@ body {
 }
 /* ==================Стилизация Примеров наших работ  ===============*/
 
-.works .title {
-  padding: 20px 24px 4px 24px;
-  margin: 0;
+.work-example {
+  padding: 20px 24px 20px 24px;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+.works .title {
+  margin: 0;
+  margin-bottom: 4px;
 
   color: var(--title-text-color);
   font-weight: 700;
@@ -370,11 +372,7 @@ body {
 }
 
 .works .text {
-  padding: 0px 24px 20px 24px;
   margin: 0;
-  border-bottom: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
 
   color: #757575;
   font-size: 16px;
@@ -382,9 +380,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-.hp-container {
-  display: flex;
-}
 .works {
   display: flex;
   flex-wrap: wrap;
