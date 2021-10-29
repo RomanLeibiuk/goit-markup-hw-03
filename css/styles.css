@@ -312,8 +312,12 @@ body {
   margin-bottom: 20px;
 }
 
-.ad-list .item:not(:last-child) {
+.ad-list .item {
+  display: block;
   margin-bottom: 9px;
+}
+.ad-list .item:nth-last-child(-n + 1) {
+  margin: 0;
 }
 
 /* II. ==================Стилизация страницы portfolio.html ===============*/
